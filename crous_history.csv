@@ -21,3 +21,15 @@ date_utc,evenement,id,logement
 2026-10-10 15:21:32,disparu,1005,"CITE INTERNATIONALE · 13621 AIX EN PROVENCE cedex · 311,63 €"
 2026-10-10 15:21:32,disparu,1239,"CU MONBOIS · 54052 NANCY CEDEX · 176,5 €"
 2026-10-10 15:21:32,disparu,588,"Résidence Ester · 87069 LIMOGES Cédex de · 274,2 €"
+2026-10-10 15:29:49,disparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 343,2 €"
+2026-10-10 16:05:55,apparu,1288,Résidence Montmuzard · 21000 DIJON
+2026-10-10 16:05:55,apparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 321,17 €"
+2026-10-10 16:05:55,apparu,2380,"H.L.M. · 63000 CLERMONT-FD de · 311,63 €"
+2026-10-10 16:05:55,apparu,2434,Résidence Guy de Maupassant · 59000 LILLE de · 277 €
+2026-10-10 16:05:55,disparu,3106,"Résidence de Felletin · 23500 FELLETIN · 392,52 €"
+2026-10-10 16:05:55,disparu,3130,"CLACTON · 26000 VALENCE · 372,66 €"
+2026-10-10 16:11:22,apparu,1069,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 432,32 €"
+2026-10-10 16:11:22,apparu,3106,"Résidence de Felletin · 23500 FELLETIN · 392,52 €"
+2026-10-10 16:11:22,apparu,3130,CLACTON · 26000 VALENCE
+2026-10-10 16:11:22,disparu,2434,Résidence Guy de Maupassant · 59000 LILLE de · 277 €
+2026-10-10 16:16:32,apparu,1279,Résidence Mansart · 21000 DIJON de
