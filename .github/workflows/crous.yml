@@ -22,6 +22,7 @@ jobs:
     env:
       CROUS_SEARCH_URL: "https://trouverunlogement.lescrous.fr/tools/47/search"
       POSTCODES: "06"
+      EXCLUDE_POSTCODES: "06400,06150"   # Cannes, Cannes La Bocca
       CHECK_INTERVAL: "300"
       TG_TOKEN: ${{ secrets.TG_TOKEN }}
       TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
