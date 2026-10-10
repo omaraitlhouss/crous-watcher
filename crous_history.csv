@@ -33,3 +33,11 @@ date_utc,evenement,id,logement
 2026-10-10 16:11:22,apparu,3130,CLACTON · 26000 VALENCE
 2026-10-10 16:11:22,disparu,2434,Résidence Guy de Maupassant · 59000 LILLE de · 277 €
 2026-10-10 16:16:32,apparu,1279,Résidence Mansart · 21000 DIJON de
+2026-10-10 16:19:57,apparu,1786,Lauréats · 63100 CLERMONT-FD de
+2026-10-10 16:25:05,disparu,1288,"Résidence Montmuzard · 21000 DIJON · 311,63 €"
+2026-10-10 16:25:05,disparu,2380,"H.L.M. · 63000 CLERMONT-FD de · 289,39 €"
+2026-10-10 16:30:19,disparu,1279,"Résidence Mansart · 21000 DIJON de · 225,57 €"
+2026-10-10 16:35:28,disparu,1069,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 418,56 €"
+2026-10-10 16:56:14,disparu,1786,"Lauréats · 63100 CLERMONT-FD de · 418,56 €"
+2026-10-10 17:01:22,apparu,1288,Résidence Montmuzard · 21000 DIJON
+2026-10-10 17:01:22,disparu,1290,"Résidence Montmuzard · 21000 DIJON · 311,63 €"
