@@ -10,6 +10,7 @@ la liste France (page par page) et on filtre sur le code postal.
 Dépendance : pip install requests
 """
 
+import csv
 import html as htmllib
 import json
 import os
@@ -49,6 +50,9 @@ CALLMEBOT_APIKEY = os.getenv("WA_APIKEY", "")
 
 CHECK_INTERVAL_SECONDS = int(os.getenv("CHECK_INTERVAL", "300"))  # 5 min
 STATE_FILE = Path(os.getenv("STATE_FILE", "crous_seen.json"))
+# Historique de tous les logements France (apparitions / disparitions)
+SNAPSHOT_FILE = Path(os.getenv("SNAPSHOT_FILE", "crous_snapshot.json"))
+HISTORY_FILE = Path(os.getenv("HISTORY_FILE", "crous_history.csv"))
 MAX_PAGES = 40
 MAX_PASSES = 6  # passes max sur toutes les pages pour tout récupérer
 # ---------------------------------------------------------------------------
@@ -239,9 +243,46 @@ def check_once(seen: set[str]) -> set[str]:
         log(msg.replace("\n", " | "))
         notify(msg)
 
+    record_history(cards, total)
+
     # On garde uniquement ce qui est encore affiché : si un logement
     # disparaît puis réapparaît, tu seras de nouveau notifié.
     return set(matches)
+
+
+def record_history(cards: dict[str, str], total: int | None) -> None:
+    """Note dans HISTORY_FILE chaque logement qui apparaît ou disparaît (toute la France)."""
+    # Lecture incomplète -> on ne compare pas (sinon fausses disparitions)
+    if total is None or len(cards) < total:
+        return
+    current = {}
+    for acc_id, text in cards.items():
+        cp = card_postcode(text) or ""
+        current[acc_id] = card_summary(text, cp) if cp else text.split(" ¦ ", 1)[0]
+    previous = {}
+    if SNAPSHOT_FILE.exists():
+        try:
+            previous = json.loads(SNAPSHOT_FILE.read_text())
+        except (json.JSONDecodeError, OSError):
+            previous = {}
+    SNAPSHOT_FILE.write_text(json.dumps(current, ensure_ascii=False))
+    if not previous:
+        log(f"Historique : premier relevé ({len(current)} logements), rien à comparer.")
+        return
+
+    now = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
+    rows = [(now, "apparu", i, current[i]) for i in sorted(set(current) - set(previous))]
+    rows += [(now, "disparu", i, previous[i]) for i in sorted(set(previous) - set(current))]
+    if not rows:
+        return
+    new_file = not HISTORY_FILE.exists()
+    with HISTORY_FILE.open("a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if new_file:
+            w.writerow(["date_utc", "evenement", "id", "logement"])
+        w.writerows(rows)
+    log(f"Historique : {sum(r[1] == 'apparu' for r in rows)} apparu(s), "
+        f"{sum(r[1] == 'disparu' for r in rows)} disparu(s).")
 
 
 def main() -> None:

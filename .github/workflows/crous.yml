@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write  # pour enregistrer crous_history.csv
   actions: write   # pour relancer le run suivant
 
 jobs:
@@ -53,7 +53,9 @@ jobs:
         if: ${{ !inputs.test }}
         uses: actions/cache/restore@v4
         with:
-          path: crous_seen.json
+          path: |
+            crous_seen.json
+            crous_snapshot.json
           key: crous-seen-${{ github.run_id }}
           restore-keys: crous-seen-
 
@@ -66,8 +68,23 @@ jobs:
         if: ${{ always() && !inputs.test }}
         uses: actions/cache/save@v4
         with:
-          path: crous_seen.json
+          path: |
+            crous_seen.json
+            crous_snapshot.json
           key: crous-seen-${{ github.run_id }}
+
+      # Enregistre l'historique des apparitions/disparitions dans le dépôt
+      - name: Enregistrer l'historique
+        if: ${{ always() && !inputs.test }}
+        run: |
+          [ -f crous_history.csv ] || exit 0
+          git config user.name "crous-watcher"
+          git config user.email "crous-watcher@users.noreply.github.com"
+          git add crous_history.csv
+          git diff --cached --quiet && exit 0
+          git commit -m "Historique CROUS $(date -u +%F' '%H:%M)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          echo "Push de l'historique impossible" && exit 1
 
       # Relance immédiatement le run suivant (le cron de GitHub n'est pas fiable).
       # Si tu annules un run (Cancel workflow), la chaîne s'arrête.
