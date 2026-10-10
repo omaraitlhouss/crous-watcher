@@ -1,0 +1,62 @@
+name: CROUS Nice watcher
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # relance toutes les 30 min (chaque run surveille ~55 min)
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Envoyer seulement un message de test"
+        type: boolean
+        default: false
+
+# Un seul watcher à la fois : le suivant attend que le précédent finisse.
+concurrency:
+  group: crous-watcher
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    env:
+      CROUS_SEARCH_URL: "https://trouverunlogement.lescrous.fr/tools/47/search?bounds=7.00_43.77_7.33_43.55"
+      CHECK_INTERVAL: "300"
+      TG_TOKEN: ${{ secrets.TG_TOKEN }}
+      TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+      WA_PHONE: ${{ secrets.WA_PHONE }}
+      WA_APIKEY: ${{ secrets.WA_APIKEY }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Test
+        if: ${{ inputs.test }}
+        run: python crous_nice_watcher.py --test
+
+      # Récupère la liste des logements déjà signalés (évite les doublons)
+      - name: Restaurer l'état
+        if: ${{ !inputs.test }}
+        uses: actions/cache/restore@v4
+        with:
+          path: crous_seen.json
+          key: crous-seen-${{ github.run_id }}
+          restore-keys: crous-seen-
+
+      # Vérifie toutes les 5 min pendant 55 min
+      - name: Surveiller
+        if: ${{ !inputs.test }}
+        run: timeout 55m python crous_nice_watcher.py || true
+
+      - name: Sauvegarder l'état
+        if: ${{ always() && !inputs.test }}
+        uses: actions/cache/save@v4
+        with:
+          path: crous_seen.json
+          key: crous-seen-${{ github.run_id }}
