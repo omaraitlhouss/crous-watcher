@@ -2,7 +2,7 @@ name: CROUS Nice watcher
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # relance toutes les 30 min (chaque run surveille ~55 min)
+    - cron: "*/30 * * * *"   # secours, si la chaîne de relance s'arrête
   workflow_dispatch:
     inputs:
       test:
@@ -14,6 +14,10 @@ on:
 concurrency:
   group: crous-watcher
   cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: write   # pour relancer le run suivant
 
 jobs:
   watch:
@@ -64,3 +68,11 @@ jobs:
         with:
           path: crous_seen.json
           key: crous-seen-${{ github.run_id }}
+
+      # Relance immédiatement le run suivant (le cron de GitHub n'est pas fiable).
+      # Si tu annules un run (Cancel workflow), la chaîne s'arrête.
+      - name: Relancer le watcher
+        if: ${{ !inputs.test && !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run crous.yml --repo "${{ github.repository }}" --ref "${{ github.ref_name }}"
