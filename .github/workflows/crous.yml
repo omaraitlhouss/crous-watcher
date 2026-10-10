@@ -20,7 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 65
     env:
-      CROUS_SEARCH_URL: "https://trouverunlogement.lescrous.fr/tools/47/search?bounds=7.00_43.77_7.33_43.55"
+      CROUS_SEARCH_URL: "https://trouverunlogement.lescrous.fr/tools/47/search"
+      POSTCODES: "06"
       CHECK_INTERVAL: "300"
       TG_TOKEN: ${{ secrets.TG_TOKEN }}
       TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
@@ -38,7 +39,9 @@ jobs:
 
       - name: Test
         if: ${{ inputs.test }}
-        run: python crous_nice_watcher.py --test
+        run: |
+          python crous_nice_watcher.py --test
+          python crous_nice_watcher.py --dry-run
 
       # Récupère la liste des logements déjà signalés (évite les doublons)
       - name: Restaurer l'état
