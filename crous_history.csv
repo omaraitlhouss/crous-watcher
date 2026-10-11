@@ -135,3 +135,9 @@ date_utc,evenement,id,logement
 2026-10-11 15:07:08,apparu,550,"Résidence de l'Aurence · 87100 LIMOGES de · 301,97 €"
 2026-10-11 15:12:16,apparu,1038,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 301,97 €"
 2026-10-11 15:12:16,disparu,2273,"CITE LAKANAL · 49045 ANGERS CEDEX · 399,37 €"
+2026-10-11 15:25:54,disparu,550,Résidence de l'Aurence · 87100 LIMOGES de · 262 €
+2026-10-11 15:41:20,disparu,1069,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 268,5 €"
+2026-10-11 16:07:37,apparu,1021,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 418,56 €"
+2026-10-11 16:07:37,apparu,1069,Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES
+2026-10-11 16:07:37,apparu,1290,"Résidence Montmuzard · 21000 DIJON · 225,57 €"
+2026-10-11 16:12:57,disparu,2010,"CU Alsace · 35000 Rennes de · 399,37 €"
