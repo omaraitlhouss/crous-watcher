@@ -106,3 +106,10 @@ date_utc,evenement,id,logement
 2026-10-11 11:10:43,disparu,1216,RESIDENCE ROBERVAL · 60200 COMPIEGNE · 204 €
 2026-10-11 11:16:06,apparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 301,97 €"
 2026-10-11 11:21:20,disparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 301,97 €"
+2026-10-11 12:21:49,apparu,1058,Gare · 63000 CLERMONT-FD
+2026-10-11 12:21:49,disparu,3091,"Résidence les Hauts de Vanteaux · 87038 LIMOGES CEDEX · 389,29 €"
+2026-10-11 12:26:57,disparu,1058,Gare · 63000 CLERMONT-FD
+2026-10-11 12:32:10,apparu,1058,"Gare · 63000 CLERMONT-FD · 301,97 €"
+2026-10-11 12:32:10,disparu,227,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 403,59 €"
+2026-10-11 12:32:10,disparu,588,"Résidence Ester · 87069 LIMOGES Cédex de · 330,18 €"
+2026-10-11 12:32:10,disparu,709,"CU LA BATELIERE · 54320 Maxéville · 295,2 €"
