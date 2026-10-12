@@ -380,3 +380,18 @@ date_utc,evenement,id,logement
 2026-10-12 16:03:21,disparu,3006,"Orsay-Georges Charpak · 91400 Orsay de · 366,62 €"
 2026-10-12 16:08:38,apparu,2156,CITE GASTON BERGER · 13331 Marseille cedex · 255 €
 2026-10-12 16:08:38,apparu,550,"Résidence de l'Aurence · 87100 LIMOGES de · 388,19 €"
+2026-10-12 16:12:29,apparu,791,"RESIDENCE COTEAU · 80000 AMIENS de · 335,56 €"
+2026-10-12 16:12:29,apparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 350,1 €"
+2026-10-12 16:12:29,disparu,2509,"RESIDENCE LA VERDIERE · 13090 Aix-en-Provence de · 467,14 €"
+2026-10-12 16:23:35,disparu,1654,LES FLANDRES · 41000 BLOIS · 479 €
+2026-10-12 16:23:35,disparu,2156,CITE GASTON BERGER · 13331 Marseille cedex · 255 €
+2026-10-12 16:23:35,disparu,550,"Résidence de l'Aurence · 87100 LIMOGES de · 388,19 €"
+2026-10-12 16:23:35,disparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 350,1 €"
+2026-10-12 16:28:43,disparu,791,"RESIDENCE COTEAU · 80000 AMIENS de · 335,56 €"
+2026-10-12 16:44:41,apparu,3004,Orsay-Georges Charpak · 91400 Orsay de · 600 €
+2026-10-12 16:49:55,apparu,2702,Saclay-George Sand · 91190 GIF-SUR-YVETTE de · 419 €
+2026-10-12 16:49:55,disparu,2594,"CITE BELLE BEILLE · 49045 ANGERS CEDEX · 274,2 €"
+2026-10-12 16:49:55,disparu,3004,Orsay-Georges Charpak · 91400 Orsay de · 600 €
+2026-10-12 16:55:14,disparu,2702,Saclay-George Sand · 91190 GIF-SUR-YVETTE de · 419 €
+2026-10-12 17:05:44,apparu,2156,CITE GASTON BERGER · 13331 Marseille cedex · 255 €
+2026-10-12 17:05:44,apparu,2594,"CITE BELLE BEILLE · 49045 ANGERS CEDEX · 274,2 €"
