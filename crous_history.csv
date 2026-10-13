@@ -869,3 +869,34 @@ date_utc,evenement,id,logement
 2026-10-13 15:10:10,apparu,2652,"Résidence Gambetta · 62100 CALAIS de · 359,38 €"
 2026-10-13 15:10:10,apparu,2897,"Résidence Gaston Adriensence · 59600 Maubeuge de · 445,48 €"
 2026-10-13 15:10:10,apparu,2903,"Résidence Gaston Adriensence · 59600 Maubeuge · 596,03 €"
+2026-10-13 15:13:44,apparu,1279,Résidence Mansart · 21000 DIJON de · 277 €
+2026-10-13 15:13:44,disparu,1626,VILLEHARDOUIN · 10430 ROSIERES PRES TROYES · 346 €
+2026-10-13 15:13:44,disparu,1813,"Résidence Emilienne Moreau · 62300 LENS · 373,35 €"
+2026-10-13 15:13:44,disparu,2652,"Résidence Gambetta · 62100 CALAIS de · 359,38 €"
+2026-10-13 15:13:44,disparu,2753,RESIDENCE SAINT CESAIRE
+2026-10-13 15:18:53,apparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
+2026-10-13 15:18:53,apparu,1348,"CITE BERLIOZ · 44300 NANTES · 274,2 €"
+2026-10-13 15:18:53,apparu,1361,EVARISTE GALOIS · 51100 REIMS · 269 €
+2026-10-13 15:18:53,disparu,1279,Résidence Mansart · 21000 DIJON de · 277 €
+2026-10-13 15:24:01,apparu,198,"Résidence Les Tertiales · 59300 VALENCIENNES · 460,26 €"
+2026-10-13 15:24:01,apparu,218,"Résidence Les Tertiales · 59300 VALENCIENNES de · 564,75 €"
+2026-10-13 15:24:01,apparu,2652,"Résidence Gambetta · 62100 CALAIS de · 359,38 €"
+2026-10-13 15:24:01,disparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
+2026-10-13 15:24:01,disparu,1361,EVARISTE GALOIS · 51100 REIMS · 269 €
+2026-10-13 15:29:10,apparu,223,"Résidence Les Tertiales · 59300 VALENCIENNES · 630,95 €"
+2026-10-13 15:29:10,apparu,2610,"RESIDENCE FLORA TRISTAN · 49000 ANGERS de · 342,64 €"
+2026-10-13 15:29:10,apparu,270,"Résidence Olympie · 62219 LONGUENESSE · 461,83 €"
+2026-10-13 15:29:10,apparu,325,"Résidence Saint Louis · 62200 BOULOGNE-SUR-MER · 491,28 €"
+2026-10-13 15:29:10,apparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 350,1 €"
+2026-10-13 15:29:10,disparu,1079,DR DESFRAY · 41000 BLOIS de · 326 €
+2026-10-13 15:34:18,apparu,1588,"RESIDENCE JUSSIEU · 69100 VILLEURBANNE de · 295,2 €"
+2026-10-13 15:34:18,apparu,2217,"CITE LA BOURGEONNIERE · 52222 · 274,2 €"
+2026-10-13 15:34:18,disparu,1348,"CITE BERLIOZ · 44300 NANTES · 274,2 €"
+2026-10-13 15:34:18,disparu,2652,"Résidence Gambetta · 62100 CALAIS de · 359,38 €"
+2026-10-13 15:34:18,disparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 350,1 €"
+2026-10-13 15:39:26,apparu,1079,DR DESFRAY · 41000 BLOIS de · 326 €
+2026-10-13 15:44:34,disparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 311,63 €"
+2026-10-13 15:44:34,disparu,2217,"CITE LA BOURGEONNIERE · 52222 · 274,2 €"
+2026-10-13 15:54:51,apparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
+2026-10-13 16:00:00,apparu,1165,CITE LUMINY · 13288 Marseille cedex · 350 €
+2026-10-13 16:05:13,disparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
