@@ -926,3 +926,9 @@ date_utc,evenement,id,logement
 2026-10-13 20:30:54,disparu,1279,Résidence Mansart · 21000 DIJON de · 277 €
 2026-10-13 20:36:02,apparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 311,63 €"
 2026-10-13 20:41:11,disparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 311,63 €"
+2026-10-13 20:50:11,apparu,1090,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 358,31 €"
+2026-10-13 20:50:11,apparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 311,63 €"
+2026-10-13 21:10:44,disparu,1366,"Résidence Alice Milliat · 62800 Liévin · 325,03 €"
+2026-10-13 21:16:05,disparu,2416,"BERLIOZ · 38406 St MARTIN D HERES · 312,62 €"
+2026-10-13 21:21:15,apparu,2688,"GALILEE · 38100 GRENOBLE de · 521,59 €"
+2026-10-13 21:31:47,disparu,1726,"RESIDENCE DES PEUPLIERS · 60200 COMPIEGNE · 411,16 €"
