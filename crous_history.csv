@@ -913,3 +913,10 @@ date_utc,evenement,id,logement
 2026-10-13 18:35:26,apparu,2050,"CU TECHNOPOLE 1 · 57070 METZ · 430,19 €"
 2026-10-13 18:40:39,disparu,2050,"CU TECHNOPOLE 1 · 57070 METZ · 430,19 €"
 2026-10-13 18:45:52,disparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
+2026-10-13 19:10:08,apparu,1279,Résidence Mansart · 21000 DIJON de · 277 €
+2026-10-13 19:10:08,apparu,1813,"Résidence Emilienne Moreau · 62300 LENS · 373,35 €"
+2026-10-13 19:10:08,disparu,1839,"Résidence Emilienne Moreau · 62300 LENS · 391,93 €"
+2026-10-13 19:20:24,apparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 350,1 €"
+2026-10-13 19:20:24,disparu,1813,"Résidence Emilienne Moreau · 62300 LENS · 373,35 €"
+2026-10-13 19:20:24,disparu,1821,"Résidence Emilienne Moreau · 62300 LENS · 394,95 €"
+2026-10-13 19:25:33,disparu,978,"Cité Jean Mermoz · 59139 WATTIGNIES · 350,1 €"
