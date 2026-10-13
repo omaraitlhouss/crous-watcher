@@ -900,3 +900,9 @@ date_utc,evenement,id,logement
 2026-10-13 15:54:51,apparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
 2026-10-13 16:00:00,apparu,1165,CITE LUMINY · 13288 Marseille cedex · 350 €
 2026-10-13 16:05:13,disparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
+2026-10-13 16:13:59,disparu,1165,CITE LUMINY · 13288 Marseille cedex · 350 €
+2026-10-13 16:39:53,apparu,2501,"Résidence Guy de Maupassant · 59000 LILLE de · 458,9 €"
+2026-10-13 16:39:53,apparu,2767,RESIDENCE LES DOUANES · 13003 Marseille de · 328 €
+2026-10-13 16:45:17,disparu,2501,"Résidence Guy de Maupassant · 59000 LILLE de · 458,9 €"
+2026-10-13 16:45:17,disparu,2688,"GALILEE · 38100 GRENOBLE de · 521,59 €"
+2026-10-13 16:55:36,disparu,2767,RESIDENCE LES DOUANES · 13003 Marseille de · 328 €
