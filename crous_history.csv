@@ -1241,3 +1241,6 @@ date_utc,evenement,id,logement
 2026-10-14 20:12:42,disparu,1366,"Résidence Alice Milliat · 62800 Liévin · 325,03 €"
 2026-10-14 20:33:13,apparu,1366,"Résidence Alice Milliat · 62800 Liévin · 325,03 €"
 2026-10-14 20:38:22,disparu,2010,"CU Alsace · 35000 Rennes de · 265,99 €"
+2026-10-14 20:41:56,apparu,1279,Résidence Mansart · 21000 DIJON de · 277 €
+2026-10-14 21:23:05,apparu,209,"Résidence Les Tertiales · 59300 VALENCIENNES · 476,89 €"
+2026-10-14 21:23:05,disparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 311,63 €"
