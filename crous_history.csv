@@ -1219,3 +1219,6 @@ date_utc,evenement,id,logement
 2026-10-14 17:26:41,apparu,28,"Résidence les Dolines · 06560 VALBONNE · 409,55 €"
 2026-10-14 17:42:07,apparu,2220,"RESIDENCE GEORGE BESSE · 30035 NIMES CEDEX · 361,66 €"
 2026-10-14 17:47:15,apparu,3091,"Résidence les Hauts de Vanteaux · 87038 LIMOGES CEDEX · 376,79 €"
+2026-10-14 18:16:36,disparu,3091,"Résidence les Hauts de Vanteaux · 87038 LIMOGES CEDEX · 376,79 €"
+2026-10-14 18:21:45,apparu,2141,"Résidence Gustave Ansart · 59300 AULNOY-LEZ-VALENCIENNES · 311,63 €"
+2026-10-14 18:47:27,disparu,198,"Résidence Les Tertiales · 59300 VALENCIENNES · 460,26 €"
