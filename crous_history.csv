@@ -1266,3 +1266,7 @@ date_utc,evenement,id,logement
 2026-10-15 02:05:55,apparu,822,"RESIDENCE COTEAU · 80000 AMIENS de · 444,1 €"
 2026-10-15 02:11:06,apparu,1288,Résidence Montmuzard · 21000 DIJON · 277 €
 2026-10-15 02:11:06,disparu,1290,"Résidence Montmuzard · 21000 DIJON · 176,5 €"
+2026-10-15 02:34:35,disparu,2931,"CITE CHANZY · 44042 NANTES CEDEX · 274,2 €"
+2026-10-15 02:45:12,disparu,455,"Studios Cézeaux · 63170 AUBIERE · 339,66 €"
+2026-10-15 02:50:25,disparu,2253,"Hauts de Lafayette · 63000 CLERMONT-FD de · 334,75 €"
+2026-10-15 02:50:25,disparu,408,"CU DU CHARMOIS · 54500 VANDOEUVRE LES NANCY · 285,08 €"
