@@ -1760,3 +1760,9 @@ date_utc,evenement,id,logement
 2026-10-16 20:15:15,disparu,117,"Résidence Montebello · 06106 NICE cedex · 268,52 €"
 2026-10-16 20:20:25,apparu,1858,Combs La Ville - Ilot du Bel Air · 77380 Combs La Ville de · 408 €
 2026-10-16 20:25:36,disparu,1858,Combs La Ville - Ilot du Bel Air · 77380 Combs La Ville de · 408 €
+2026-10-16 20:44:41,apparu,1735,"Residence Jean Médecin · 06200 NICE de · 268,52 €"
+2026-10-16 20:44:41,apparu,561,"Résidence les Hauts de Vanteaux · 87038 LIMOGES CEDEX · 326,14 €"
+2026-10-16 20:49:49,apparu,588,"Résidence Ester · 87069 LIMOGES Cédex de · 416,43 €"
+2026-10-16 20:49:49,disparu,1735,"Residence Jean Médecin · 06200 NICE de · 268,52 €"
+2026-10-16 20:49:49,disparu,561,"Résidence les Hauts de Vanteaux · 87038 LIMOGES CEDEX · 326,14 €"
+2026-10-16 21:10:23,disparu,1626,VILLEHARDOUIN · 10430 ROSIERES PRES TROYES · 346 €
