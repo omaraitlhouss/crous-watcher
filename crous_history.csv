@@ -1752,3 +1752,6 @@ date_utc,evenement,id,logement
 2026-10-16 17:39:38,apparu,2162,"RESIDENCE ALICE CHATENOUD · 13388 Marseille · 310,14 €"
 2026-10-16 17:44:46,disparu,1858,Combs La Ville - Ilot du Bel Air · 77380 Combs La Ville de · 408 €
 2026-10-16 17:44:46,disparu,2162,"RESIDENCE ALICE CHATENOUD · 13388 Marseille · 310,14 €"
+2026-10-16 18:19:32,apparu,117,"Résidence Montebello · 06106 NICE cedex · 268,52 €"
+2026-10-16 18:29:53,disparu,117,"Résidence Montebello · 06106 NICE cedex · 268,52 €"
+2026-10-16 18:40:17,apparu,1348,"CITE BERLIOZ · 44300 NANTES · 274,2 €"
