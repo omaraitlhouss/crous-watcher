@@ -1902,3 +1902,6 @@ date_utc,evenement,id,logement
 2026-10-18 10:10:04,apparu,1052,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 266,67 €"
 2026-10-18 10:10:04,apparu,189,"Résidence Les Tertiales · 59300 VALENCIENNES de · 361,08 €"
 2026-10-18 10:15:26,disparu,1052,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 266,67 €"
+2026-10-18 10:18:51,disparu,189,"Résidence Les Tertiales · 59300 VALENCIENNES de · 361,08 €"
+2026-10-18 11:10:05,apparu,1052,"Cité Jules Mousseron · 59300 AULNOY-LES-VALENCIENNES · 266,67 €"
+2026-10-18 11:10:05,apparu,574,FILAOS · 38000 GRENOBLE · 368 €
